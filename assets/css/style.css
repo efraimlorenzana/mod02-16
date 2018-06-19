@@ -20,10 +20,10 @@
  }
 
  h2, h3 {
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
+ 	font-family: 'Montserrat', sans-serif;
+ 	text-transform: uppercase;
+ 	letter-spacing: 2px;
+ }
 
  header {
  	min-height: 10vh;
@@ -55,8 +55,8 @@
  }
  main > div.left > div.row > div > div > img,
  main > div.right > div.row > div > div > img {
-  	width: 100%;
-  	height: 100%;
+ 	width: 100%;
+ 	height: 100%;
  }
  main > div.left > div.row > div > p,
  main > div.right > div.row > div > p {
@@ -81,11 +81,6 @@
  	/*color:yellow;*/
  }
 
- footer [id^="col"] div {
- 	width: 100px;
- 	margin-right: 10px;
- 	float: left;
- }
  footer [id^="col"] > div > img {
  	width: 100%;
  }
@@ -143,6 +138,16 @@
 
  /*---------- Desktop Devices ----------*/
  @media only screen and (min-width: 961px){
+
+ 	footer [id^="col"] div {
+ 		width: 100px;
+ 		margin-right: 10px;
+ 		float: left;
+ 	}
+ 	footer [id^="col"] > div > img {
+ 		width: 100%;
+ 	}
+
  	.col-lg-1 {
  		width: 8.33%; /* 100% / 12*/
  	}
@@ -229,8 +234,10 @@
  		width: 100%;
  	}
  }
-  /*---------- Mobile Devices ----------*/
+ /*---------- Mobile Devices ----------*/
  @media only screen and (max-width: 400px){
+
+
  	.container {
  		width: 100vw;
  	}
