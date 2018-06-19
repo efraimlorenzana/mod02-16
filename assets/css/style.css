@@ -193,6 +193,15 @@
  		width: 50%;
  	}
 
+ 	footer [id^="col"] div {
+ 		width: 100px;
+ 		margin-right: 10px;
+ 		float: left;
+ 	}
+ 	footer [id^="col"] > div > img {
+ 		width: 100%;
+ 	}
+
  	.container {
  		width: 100vw;
  	}
