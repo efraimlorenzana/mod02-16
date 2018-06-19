@@ -1,0 +1,268 @@
+/*
+ *
+ * CSS Reset
+ *
+ */
+ * {
+ 	padding:0;
+ 	margin:0;
+ 	box-sizing: border-box;
+ }
+
+/*
+ *
+ * General Rules
+ *
+ */
+ body {
+ 	font-family: 'Encode Sans Condensed', sans-serif;
+ }
+
+ h2, h3 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+ header {
+ 	min-height: 10vh;
+ 	background-color: red;
+ }
+
+ main {
+ 	background-color: yellow;
+ 	min-height: 100vh;
+ }
+ main > div.left,
+ main > div.right {
+ 	height: 100%;
+ }
+ main > div.left {
+ 	background-color: blue;
+ 	color:white;
+ }
+ main > div.left > div.row > div > h2,
+ main > div.right > div.row > div > h2 {
+ 	padding: 10px 0;
+ 	text-align: center;
+ }
+ main > div.left > div.row > div > div,
+ main > div.right > div.row > div > div {
+ 	width: 77.80%;
+ 	padding: 0 22px 10px;
+ 	margin: 0 auto;
+ }
+ main > div.left > div.row > div > div > img,
+ main > div.right > div.row > div > div > img {
+  	width: 100%;
+  	height: 100%;
+ }
+ main > div.left > div.row > div > p,
+ main > div.right > div.row > div > p {
+ 	padding: 0 15px 10px;
+ 	text-align: justify;
+ }
+
+ main > div.right {
+ 	background-color: green;
+ 	color:white;
+ }
+
+ footer {
+ 	min-height: 10vh;
+ 	background-color: orange;
+ }
+
+ footer [id^="col"] > h3 {
+ 	padding-bottom: 10px;
+ 	text-align: center;
+ 	color:yellow;
+ }
+
+ footer [id^="col"] div {
+ 	width: 100px;
+ 	margin-right: 10px;
+ 	float: left;
+ }
+ footer [id^="col"] > div > img {
+ 	width: 100%;
+ }
+ footer [id^="col"] > p {
+ 	text-align: justify;
+ }
+
+ div#col1 {
+ 	background-color: indigo;
+ 	padding: 10px;
+ }
+ div#col2 {
+ 	background-color: violet;
+ 	padding: 10px;
+ }
+ div#col3 {
+ 	background-color: pink;
+ 	padding: 10px;
+ }
+ div#col4 {
+ 	background-color: magenta;
+ 	padding: 10px;
+ }
+
+ /*----------  Classes ----------*/
+ .row:after {
+ 	content: "";
+ 	clear:both;
+ 	display: block;
+ }
+ [class*="col"] {
+ 	float: left;
+ }
+
+ [id^="col"] {
+ 	min-height: 10vh;
+ }
+
+/*
+ *
+ * Custom CSS Fluid Grid System
+ *
+ */
+
+ .container {
+ 	width: 80vw;
+ 	margin: 0 auto;
+ }
+ .container-fluid {
+ 	width: 100vw;
+ }
+
+ /*---------- Desktop Devices ----------*/
+ @media only screen and (min-width: 961px){
+ 	.col-lg-1 {
+ 		width: 8.33%; /* 100% / 12*/
+ 	}
+ 	.col-lg-2 {
+ 		width: 16.66%;
+ 	}
+ 	.col-lg-3 {
+ 		width: 25%;
+ 	}
+ 	.col-lg-4 {
+ 		width: 33.33%;
+ 	}
+ 	.col-lg-5 {
+ 		width: 41.66%;
+ 	}
+ 	.col-lg-6 {
+ 		width: 50%;
+ 	}
+ 	.col-lg-7 {
+ 		width: 58.33%;
+ 	}
+ 	.col-lg-8 {
+ 		width: 66.66%;
+ 	}
+ 	.col-lg-9 {
+ 		width: 75%;
+ 	}
+ 	.col-lg-10 {
+ 		width: 83.33%;
+ 	}
+ 	.col-lg-11 {
+ 		width: 91.66%;
+ 	}
+ 	.col-lg-12 {
+ 		width: 100%;
+ 	}
+ }
+ /*---------- Tablet Devices ----------*/
+ @media only screen and (min-width: 401px) and (max-width: 960px){
+
+ 	main.row > div.right > div.row > div > div {
+ 		float: left;
+ 		width: 50%;
+ 	}
+
+ 	.container {
+ 		width: 100vw;
+ 	}
+ 	
+ 	.col-md-1 {
+ 		width: 8.33%; /* 100% / 12*/
+ 	}
+ 	.col-md-2 {
+ 		width: 16.66%;
+ 	}
+ 	.col-md-3 {
+ 		width: 25%;
+ 	}
+ 	.col-md-4 {
+ 		width: 33.33%;
+ 	}
+ 	.col-md-5 {
+ 		width: 41.66%;
+ 	}
+ 	.col-md-6 {
+ 		width: 50%;
+ 	}
+ 	.col-md-7 {
+ 		width: 58.33%;
+ 	}
+ 	.col-md-8 {
+ 		width: 66.66%;
+ 	}
+ 	.col-md-9 {
+ 		width: 75%;
+ 	}
+ 	.col-md-10 {
+ 		width: 83.33%;
+ 	}
+ 	.col-md-11 {
+ 		width: 91.66%;
+ 	}
+ 	.col-md-12 {
+ 		width: 100%;
+ 	}
+ }
+  /*---------- Mobile Devices ----------*/
+ @media only screen and (max-width: 400px){
+ 	.container {
+ 		width: 100vw;
+ 	}
+
+ 	.col-sm-1 {
+ 		width: 8.33%; /* 100% / 12*/
+ 	}
+ 	.col-sm-2 {
+ 		width: 16.66%;
+ 	}
+ 	.col-sm-3 {
+ 		width: 25%;
+ 	}
+ 	.col-sm-4 {
+ 		width: 33.33%;
+ 	}
+ 	.col-sm-5 {
+ 		width: 41.66%;
+ 	}
+ 	.col-sm-6 {
+ 		width: 50%;
+ 	}
+ 	.col-sm-7 {
+ 		width: 58.33%;
+ 	}
+ 	.col-sm-8 {
+ 		width: 66.66%;
+ 	}
+ 	.col-sm-9 {
+ 		width: 75%;
+ 	}
+ 	.col-sm-10 {
+ 		width: 83.33%;
+ 	}
+ 	.col-sm-11 {
+ 		width: 91.66%;
+ 	}
+ 	.col-sm-12 {
+ 		width: 100%;
+ 	}
+ }
